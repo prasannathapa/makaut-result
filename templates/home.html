@@ -1,0 +1,36 @@
+<form method="POST" action="/" style="padding-left: 8%; align-items: center; padding-top: 3%;">
+    <div class="form-row" style="align-content: center;">
+        <div class="form-group col-md-3">
+            <label for="year">Year of admission</label>
+            <input type="number" class="form-control" id="year" name="year" placeholder="YYYY" required>
+        </div>
+        <div class="form-group col-md-4" style="padding-left: 1%;">
+            <label for="sem">Semester</label>
+            <select type="number" name="sem" id="sem" class="form-control" required>
+                <option value="1">1st Semester</option>
+                <option value="2">2nd Semester</option>
+                <option value="3">3rd Semester</option>
+                <option value="4">4th Semester</option>
+                <option value="5">5th Semester</option>
+                <option value="6">6th Semester</option>
+                <option value="7">7th Semester</option>
+                <option value="8">8th Semester</option>
+            </select>
+        </div>
+        <div class="form-group col-md-3" style="padding-left: 1%;">
+            <label for="dept">Department</label>
+            <input type="text" id="dept" name="dept" class="form-control" placeholder="" required>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-5">
+            <label for="start">Initial Roll Number</label>
+            <input type="number" name="start" id="start" class="form-control" placeholder="">
+        </div>
+        <div class="form-group col-md-5" style="padding-left: 4%;">
+            <label for="end">Final Roll Number</label>
+            <input type="number" name="end" id="end" class="form-control" placeholder="">
+        </div>
+    </div>
+    <input class="btn btn-primary" type="submit" value="Submit" style="margin: 1%;">
+</form>
