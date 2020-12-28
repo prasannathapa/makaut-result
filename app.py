@@ -15,9 +15,7 @@ def home():
         return render_template('home.html')
     else:
         data = {
-            'year': int(request.form['year']),
             'sem': int(request.form['sem']),
-            'dept': request.form['dept'],
             'start': int(request.form['start']),
             'end': int(request.form['end'])
         }
