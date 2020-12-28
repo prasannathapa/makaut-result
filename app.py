@@ -25,7 +25,7 @@ def home():
 
         # sends the zip file. as_attachment parameters specify that the original name of the zip will be the
         #print(data1) 
-        return  Response(data1, mimetype='text/plain')
+        return  Response(data1, mimetype='text/csv')
 
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=8080)
