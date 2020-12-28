@@ -49,4 +49,9 @@ def get_result(data: dict):
                                     lines[i+5],
                                     lines[i+6]])
                         i+=6
+    if(len(marks) > 0):
+        print(roll)
+        for ix in marks:
+            rx += str(roll)+","
+            rx += ",".join(ix) + "\n"
     return rx
